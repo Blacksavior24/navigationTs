@@ -1,12 +1,15 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, Pressable } from 'react-native'
+import React, { useEffect } from 'react'
+import { HamburgerMenu } from '../../components/HamburgerMenu'
+import { Ionicon } from '../../components/Ionicon'
 
-const Tab1Screen = () => {
+export const Tab1Screen = () => {
+
   return (
     <View>
-      <Text>Tab1Screen</Text>
+      <HamburgerMenu />
+      <Text style={{color: 'black'}}>Tab1Screen</Text>
+      <Ionicon name='rocket-outline' />
     </View>
   )
 }
-
-export default Tab1Screen
